@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey-Form</title>
+</head>
+
+<body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description"></p>
+    
+        <form id="survey-form">
+            <label for="name"> Name</label> <br>
+            <input type="text" id="name" placeholder="Enter your Name" required>
+
+            <br>
+            <label for="email"> Email</label> <br>
+            <input type="email" id="email" placeholder="Enter your Emair" required  ><br>
+            <label for="number"> Number </label> <br>
+            <input type="text" placeholder="enter number"  id="number" min="1" max="90" required>
+            <br>
+            <label for="dropdown"> Which option best describes your current role? </label> <br>
+            <select id="dropdown" required>
+                <option> None </option>
+                <option> Trainer at ASAC Organization </option>
+                <option> Full Stack Developer </option>
+                <option> Lecturer at ASAC Organization </option>
+                <option> Teacher Assistant at ASAC Organization </option>
+            </select>
+            <br>
+            <label> What is your Favorit Language? </label>
+            <br>
+            <label><input type="checkbox" value="Italian language"> Italian language.</label>
+            <br>
+            <label><input type="checkbox" value="Arabic language">Arabic language.
+            </label><br>
+            <label><input type="checkbox" value="English language">English language.
+            </label><br>
+            <label><input type="checkbox" value="French language">French language.</label>
+            <br>
+            <p>Any comments or suggestions?</p>
+            <textarea placeholder="type What do you think here..." required></textarea>
+            <br>
+            <label id="number-label" for="number"
+            >Age<span class="clue">(optional)</span></label
+          >
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="10"
+            max="99"
+            class="form-control"
+            placeholder="Age"
+          />
+            <button type="submit" id="submit" class="submit-button">
+                Submit
+              </button>
+
+
+        </form>
+  
+</body>
+
+</html>
