@@ -14,15 +14,18 @@
     <p id="description">This form for taking information about our client</p>
     
         <form id="survey-form">
-            <label for="name"> Name</label> <br>
+          <div id="div1">
+            <label for="name" id="s"> Name</label> <br>
             <input type="text" id="name" placeholder="Enter your Name" required>
 
-            <br>
+            <br> <br>
             <label for="email"> Email</label> <br>
             <input type="email" id="email" placeholder="Enter your Emair" required  ><br>
+            <br>
             <label for="number">  Age </label> <br>
             <input type="number" placeholder="enter number"  id="number" min="1" max="100" required>
-            <br>
+            <br></div>
+            <div id ="div2">
             <label for="dropdown"> Which option best describes your current role? </label> <br>
             <select id="dropdown" required>
                 <option> None </option>
@@ -60,7 +63,7 @@
             <br>
          
           
-        
+        </div>
             <button type="submit" id="submit" class="submit-button">
                 Submit
               </button>
