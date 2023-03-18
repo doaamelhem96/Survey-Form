@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "Style.css">
     <title>Survey-Form</title>
 </head>
 
 <body>
-    <h1 id="title">freeCodeCamp Survey Form</h1>
-    <p id="description"></p>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">This form for taking information about our client</p>
     
         <form id="survey-form">
             <label for="name"> Name</label> <br>
@@ -19,8 +20,8 @@
             <br>
             <label for="email"> Email</label> <br>
             <input type="email" id="email" placeholder="Enter your Emair" required  ><br>
-            <label for="number"> Number </label> <br>
-            <input type="text" placeholder="enter number"  id="number" min="1" max="90" required>
+            <label for="number">  Age </label> <br>
+            <input type="number" placeholder="enter number"  id="number" min="1" max="100" required>
             <br>
             <label for="dropdown"> Which option best describes your current role? </label> <br>
             <select id="dropdown" required>
@@ -31,31 +32,22 @@
                 <option> Teacher Assistant at ASAC Organization </option>
             </select>
             <br>
-            <label> What is your Favorit Language? </label>
+            <P id="qu"> What is your Favorit Language? </p>
             <br>
-            <label><input type="checkbox" value="Italian language"> Italian language.</label>
+            <label><input type="checkbox" value="Italian language" id="lan"> Italian language.</label>
             <br>
-            <label><input type="checkbox" value="Arabic language">Arabic language.
+            <label><input type="checkbox" value="Arabic language" id="lan">Arabic language.
             </label><br>
-            <label><input type="checkbox" value="English language">English language.
+            <label><input type="checkbox" value="English language" id="lan">English language.
             </label><br>
-            <label><input type="checkbox" value="French language">French language.</label>
+            <label><input type="checkbox" value="French language" id="lan">French language.</label>
             <br>
-            <p>Any comments or suggestions?</p>
-            <textarea placeholder="type What do you think here..." required></textarea>
+            <p id ="comment">Any comments or suggestions?</p>
+            <textarea placeholder="type What do you think here..."  id ="comment1"required></textarea>
             <br>
-            <label id="number-label" for="number"
-            >Age<span class="clue">(optional)</span></label
-          >
-          <input
-            type="number"
-            name="age"
-            id="number"
-            min="10"
-            max="99"
-            class="form-control"
-            placeholder="Age"
-          />
+         
+          
+        
             <button type="submit" id="submit" class="submit-button">
                 Submit
               </button>
